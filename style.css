@@ -15,6 +15,10 @@
        
     }
     
+    :root {
+          --color-principal: #000;
+        
+    }
     nav{
         /* los colores se expresan en hex*/
         background: #be6d0fd8;
@@ -23,7 +27,7 @@
     }
     
     label.logo{
-        color: black;
+        color: var(--color-principal);
         font-size: 40px;
         padding: 0 100px;
         font-weight: bold;
@@ -50,7 +54,7 @@
         ;
     }
     a:hover{
-        background: rgba(0, 0, 0, 0.705);
+        background-color: #000;
         transition: 1s;
     }
     
@@ -58,10 +62,11 @@
     .checkbtn{
         display: none;
         font-size: 32px;
-        color: #000000;
-        float: right;
+        color: var(--color-principal)
+        float: right ;
         line-height: 80px;
         margin-right: 40px;
+
     }
     
     #check{
@@ -128,7 +133,7 @@
 }
 
 .card-list .card-item{
-    background: #ffffff;
+    background:  forestgreen;
     padding: 20px;
     border-radius: 10px;
     list-style: none;
@@ -141,3 +146,16 @@
     border-radius: 10px;
     object-fit: cover;
 }
+
+/*footer*/
+
+footer{
+    position:relative;
+    background: rgb(208, 255, 0);
+    widows: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*footer*/
